@@ -1,0 +1,203 @@
+/* Responsive Styles */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .typing-text {
+    font-size: 2.5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .scroll-nav {
+    right: 1rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .certificate-info {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+  }
+
+  .certificate-description {
+    max-width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Móviles y dispositivos pequeños */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .typing-text {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-nav {
+    display: none;
+  }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-divider {
+    height: 60px;
+  }
+
+  .section-divider svg {
+    height: 60px;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: center;
+  }
+
+  /* Ocultar cursor personalizado en dispositivos táctiles */
+  .custom-cursor-outer,
+  .custom-cursor-inner {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+/* Dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .section-container {
+    padding: var(--spacing-md) 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+    min-height: 3rem;
+  }
+
+  .hero-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .certification-card {
+    padding: var(--spacing-md);
+  }
+
+  .certification-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    padding: var(--spacing-sm);
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Dispositivos de pantalla grande */
+@media (min-width: 1400px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .typing-text {
+    font-size: 3.5rem;
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* Preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .animate-bounce,
+  .animate-pulse,
+  .animate-fade-in,
+  .animate-fade-in-up,
+  .animate-fade-in-down,
+  .animate-fade-in-left,
+  .animate-fade-in-right {
+    animation: none !important;
+  }
+
+  .section-animate-in,
+  .section-animate-right,
+  .section-animate-left {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
